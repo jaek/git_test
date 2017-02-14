@@ -13,7 +13,6 @@ from timeit import default_timer
 
 start = default_timer()
 
-
 def divideby(num, ran):
     """ divides a given interger by all numbers in a given range,
     returns if num is divisible by all values between 0 and range
@@ -27,7 +26,7 @@ def divideby(num, ran):
 start = 2520
 
 while divideby(start, 20) != True:
-    start += 1
+    start += 2520
 
 
 
