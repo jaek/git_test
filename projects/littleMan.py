@@ -4,9 +4,6 @@
 My implimentation of a little man computer
 """
 
-
-
-
 def splitter(string):
     """
     splits our input up by whitespace
