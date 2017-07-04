@@ -1,0 +1,17 @@
+(define (3-and-5 range)
+  (define (ismult x)
+    (cond
+      ((or
+       (eq? 0 (modulo x 3))
+       (eq? 0 (modulo x 5)))
+     x)
+    (else 0))
+    )
+  (define (sumof range num total)
+    (cond
+      ((eq? num range) total)
+      (else (sumof range (+ num 1) (+ total (ismult num))))
+      )
+    )
+  (sumof range 0 0)
+  )
